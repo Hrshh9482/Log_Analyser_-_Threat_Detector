@@ -14,7 +14,7 @@ priv_escalate = 0
 for line in content:
     if re.search(r'\bFailed\b', line, re.IGNORECASE):
         failed_count+=1
-    if re.search(r'\b(sudo|privilage|administrator)\b',line,re.IGNORECASE):
+    if re.search(r'\b(sudo|privilege|administrator)\b',line,re.IGNORECASE):
         priv_escalate +=1
 #        print(line.strip())
 print(f"Failed Logins : {failed_count}")
